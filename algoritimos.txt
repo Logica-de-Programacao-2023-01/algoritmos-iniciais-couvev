@@ -1,0 +1,40 @@
+Ex 1.
+
+Numero1 = int(input("Digite o numero 1: "))
+Numero2 = int(input("Digite o numero 2: "))
+
+Resultado = Numero1 + Numero2
+
+print(Resultado)
+
+Ex 2.
+
+Tipo = int(input("Começar com Celsius ou com Fahrenheit? (digite 1 para Celsius e 2 para Fahrenheit) "))
+Vlor = int(input("Quantos graus? "))
+
+
+if Tipo == 1:
+    
+    Resultado = Vlor * 9/5 + 32
+    print(Resultado)
+    
+if Tipo == 2:
+    
+    Resultado = ((Vlor - 32) * 5/9)
+    print(Resultado)
+
+Ex. 3
+
+qnt = int(input("Quantos numero voce vai usar? "))
+lst = []
+
+for a in range(qnt):
+      
+      num = float(input("Numero: "))
+      lst.append(num)
+      sumlst = sum(lst)
+      lenlst = len(lst)
+      resu = sumlst/lenlst
+      
+print("A media dos seus numeros é: ",resu)
+
