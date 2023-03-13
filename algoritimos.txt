@@ -38,3 +38,97 @@ for a in range(qnt):
       
 print("A media dos seus numeros é: ",resu)
 
+Ex. 4
+
+def main():
+    n = int(input("Digite o valor de n: "))
+    fat = 1
+    i = 2
+    while i <= n:
+        fat = fat*i
+        i = i + 1
+
+    print("O valor de %d! eh =" %n, fat)
+
+#-----
+main()
+
+Ex. 5
+
+def sequentialSearch(alist, item):
+	    pos = 0
+	    found = False
+	
+	    while pos < len(alist) and not found:
+	        if alist[pos] == item:
+	            found = True
+	        else:
+	            pos = pos+1
+	
+	    return found
+	
+testlist = [1, 2, 32, 8, 17, 19, 42, 13, 0]
+print(sequentialSearch(testlist, 3))
+print(sequentialSearch(testlist, 13))
+
+Ex. 6 
+
+print("base ^ expoente:")
+base=int(input("Base: "))
+expoente=int(input("Expoente: "))
+
+potencia=1
+
+for count in range(expoente):
+    potencia *= base
+    count += 1
+
+print(base,"^",expoente,"=",potencia)
+
+Ex. 7
+
+n = int(input("Verificar numeros primos ate: "))
+mult=0
+
+for count in range(2,n):
+    if (n % count == 0):
+        print("Múltiplo de",count)
+        mult += 1
+
+if(mult==0):
+    print("É primo")
+else:
+    print("Tem",mult," múltiplos acima de 2 e abaixo de",n)
+
+Ex. 8
+
+altura = int(input('Digite a altura do triãngulo: '))
+base = int(input('Digite a base do triãngulo: '))
+area = (base * altura)/2
+print('A área do triãngulo é:', area)
+
+Ex. 9
+
+vi = float( input('Valor inicial: ') )
+
+i = float ( input('Rentabilidade mensal: ') )
+
+i = i / 100
+
+m = int( input('Meses que vai deixar rendendo: ') )
+
+vf = vi * (1+i)**m
+
+print('Valor apos ',m,' meses: R$ ',vf)
+
+Ex. 10 
+
+nota1 = float(input("Nota 1:"))
+peso1 = float(input("Peso 1:"))
+ 
+nota2 = float(input("Nota 2:"))
+peso2 = float(input("Peso 2:"))
+ 
+media = (nota1*peso1 + nota2*peso2) / (peso1+peso2)
+ 
+print("Média: ",media)
